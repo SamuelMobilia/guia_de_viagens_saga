@@ -1,5 +1,5 @@
 <footer>
-        <p>Desenvolvido por [Nome do Aluno] - 2025</p>
+        <p>Desenvolvido por Gabriel Lopes Giomo e Samuel Mobília Mota - 2026</p>
     </footer>
 </body>
 </html>
