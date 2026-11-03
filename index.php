@@ -14,9 +14,16 @@ include "destinos_data.php"
             foreach ($destinos as $destino) {
         ?>
             <div class="coluna">
-                <h2><?= $destino["nome"]?></h2>
+                <img src="imagens_viagem/<?= $destino["imagem"] ?>" alt="<?= $destino["nome"]?>">
                 <br>
-                <img src="imagens_viagem/<?= $destino["imagem"] ?>" alt="">
+                <h3><?= $destino["nome"]?></h3>
+                <h4>
+                <?= $destino["descricao_curta"]?>
+                </h4>
+                <br>
+                <p class= "regiao">
+                <?= $destino["regiao"]?>
+                </p>
             </div>
         <?php 
         $contador++;
