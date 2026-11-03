@@ -10,8 +10,17 @@ include "header.php";
         ?>
 
         <div class="coluna">
-            <img src=<?= $destino["imagem"] ?> alt="">
-        </div>
+                <img src="imagens_viagem/<?= $destino["imagem"] ?>" alt="<?= $destino["nome"]?>">
+                <br>
+                <h3><?= $destino["nome"]?></h3>
+                <h4>
+                <?= $destino["descricao_curta"]?>
+                </h4>
+                <br>
+                <p class= "regiao">
+                <?= $destino["regiao"]?>
+                </p>
+            </div>
 
         <?php } ?>
     </div>
