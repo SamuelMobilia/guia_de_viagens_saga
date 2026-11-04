@@ -1,3 +1,7 @@
+<?php
+include "header.php"
+?>
+
 <main>
     <h1>Entre em Contato</h1>
     <form name="form1" method="post" action="enviar.php">
@@ -13,3 +17,7 @@
         <button type="submit">Enviar Mensagem</button>
     </form>
 </main>
+
+<?php
+include "footer.php"
+?>
