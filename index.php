@@ -13,7 +13,7 @@ include "destinos_data.php"
             shuffle($destinos);
             foreach ($destinos as $destino) {
         ?>
-            <div class="coluna">
+            <a href="destino.php?id=<?= $destino["id"] ?>"><div class="coluna">
                 <img src="imagens_viagem/<?= $destino["imagem"] ?>" alt="<?= $destino["nome"]?>">
                 <br>
                 <h3><?= $destino["nome"]?></h3>
@@ -24,7 +24,7 @@ include "destinos_data.php"
                 <p class= "regiao">
                 <?= $destino["regiao"]?>
                 </p>
-            </div>
+            </div></a>
         <?php 
         $contador++;
         if ($contador > 3) break;

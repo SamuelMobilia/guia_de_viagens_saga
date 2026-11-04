@@ -12,7 +12,7 @@ include "header.php";
         foreach ($destinos as $destino) {
         ?>
 
-        <div class="coluna">
+        <a href="destino.php?id=<?= $destino["id"] ?>"><div class="coluna">
                 <img src="imagens_viagem/<?= $destino["imagem"] ?>" alt="<?= $destino["nome"]?>">
                 <br>
                 <h3><?= $destino["nome"]?></h3>
@@ -23,7 +23,7 @@ include "header.php";
                 <p class= "regiao">
                 <?= $destino["regiao"]?>
                 </p>
-            </div>
+            </div></a>
 
         <?php } ?>
     </div>
